@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Game Store - Cửa Hàng Game Trực Tuyến</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">CYBER<span>STORE</span></a>
+    <nav>
+      <a href="#hot">HOT GAMES</a>
+      <a href="#sale">KHUYẾN MÃI</a>
+      <a href="#adult">KHÁM PHÁ</a>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="header-btn" id="cart-button">🛒 Giỏ hàng <span id="cart-count">0</span></button>
+      <button type="button" class="header-btn" id="account-button">👤 Tài khoản</button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="game-banner">
+      <div class="game-banner-content">
+        <div class="game-banner-label">GAME OF THE MOMENT</div>
+        <h1>ELDEN RING</h1>
+        <p>Khám phá những thế giới game nổi bật, tìm tựa game yêu thích và bắt đầu cuộc phiêu lưu của bạn.</p>
+        <a href="#hot" class="game-banner-btn">Khám phá game</a>
+      </div>
+    </section>
+
+    <section class="section" id="hot">
+      <div class="section-title-wrap">
+        <h2 class="section-title">Tựa Game Hot Nhất</h2>
+      </div>
+
+      <input type="checkbox" id="toggle-hot" class="more-trigger">
+
+      <div class="game-grid">
+        <!-- 1. eFootball -->
+        <article class="game-card">
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1665460/header.jpg" alt="eFootball 2024" onerror="this.src='https://placehold.co/500x300/151922/00f0ff?text=eFootball+2024'">
+          <div class="card-body">
+            <h3 class="game-title">eFootball 2024</h3>
+            <div class="price-row">
+              <span class="sale-price">Miễn phí</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Tải về</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Black Myth Wukong -->
+        <article class="game-card">
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/2358720/header.jpg" alt="Black Myth Wukong" onerror="this.src='https://placehold.co/500x300/151922/00f0ff?text=Black+Myth+Wukong'">
+          <div class="card-body">
+            <h3 class="game-title">Black Myth: Wukong</h3>
+            <div class="price-row">
+              <span class="sale-price">1.299.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. The Sims 4 -->
+        <article class="game-card">
+          <span class="discount-badge">-60%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1222670/header.jpg" alt="EA Sports FC 24" onerror="this.src='https://placehold.co/500x300/151922/00f0ff?text=EA+Sports+FC+24'">
+          <div class="card-body">
+            <h3 class="game-title">The Sims 4</h3>
+            <div class="price-row">
+              <span class="original-price">1.400.000đ</span>
+              <span class="sale-price discounted">560.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. GTA V -->
+        <article class="game-card">
+          <span class="discount-badge">-50%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="Grand Theft Auto V" onerror="this.src='https://placehold.co/500x300/151922/00f0ff?text=GTA+V'">
+          <div class="card-body">
+            <h3 class="game-title">Grand Theft Auto V</h3>
+            <div class="price-row">
+              <span class="original-price">450.000đ</span>
+              <span class="sale-price discounted">225.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Cyberpunk 2077 -->
+        <article class="game-card">
+          <span class="discount-badge">-50%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg" alt="Cyberpunk 2077" onerror="this.src='https://placehold.co/500x300/151922/00f0ff?text=Cyberpunk+2077'">
+          <div class="card-body">
+            <h3 class="game-title">Cyberpunk 2077</h3>
+            <div class="price-row">
+              <span class="original-price">990.000đ</span>
+              <span class="sale-price discounted">495.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Elden Ring -->
+        <article class="game-card">
+          <span class="discount-badge">-30%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg" alt="Elden Ring" onerror="this.src='https://placehold.co/500x300/151922/00f0ff?text=Elden+Ring'">
+          <div class="card-body">
+            <h3 class="game-title">Elden Ring</h3>
+            <div class="price-row">
+              <span class="original-price">1.000.000đ</span>
+              <span class="sale-price discounted">700.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Valorant -->
+        <article class="game-card">
+          <img class="card-thumb" src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/5c0d4c6e9a0f6c1b5f4d0f4c2f7c2b1a2d7c7c2e-1920x1080.jpg" alt="Valorant" onerror="this.src='https://placehold.co/500x300/151922/00f0ff?text=Valorant'">
+          <div class="card-body">
+            <h3 class="game-title">Valorant</h3>
+            <div class="price-row">
+              <span class="sale-price">Miễn phí</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Tải về</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Counter-Strike 2 -->
+        <article class="game-card">
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="Counter-Strike 2" onerror="this.src='https://placehold.co/500x300/151922/00f0ff?text=Counter-Strike+2'">
+          <div class="card-body">
+            <h3 class="game-title">Counter-Strike 2</h3>
+            <div class="price-row">
+              <span class="sale-price">Miễn phí</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Tải về</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Extra Hidden Games -->
+        <div class="extra-games">
+          <article class="game-card">
+            <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg" alt="Apex Legends" onerror="this.src='https://placehold.co/500x300/151922/00f0ff?text=Apex+Legends'">
+            <div class="card-body">
+              <h3 class="game-title">Apex Legends</h3>
+              <div class="price-row">
+                <span class="sale-price">Miễn phí</span>
+              </div>
+              <div class="card-actions">
+                <a href="#" class="btn btn-detail">Chi tiết</a>
+                <a href="#" class="btn btn-buy">Tải về</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="load-more-wrap">
+        <label for="toggle-hot" class="btn-load-more">Xem thêm Hot Games</label>
+      </div>
+    </section>
+
+    <section class="section" id="sale">
+      <div class="section-title-wrap">
+        <h2 class="section-title">Game Đang Khuyến Mãi</h2>
+      </div>
+
+      <input type="checkbox" id="toggle-sale" class="more-trigger">
+
+      <div class="game-grid">
+        <!-- 1. Resident Evil 4 Remake -->
+        <article class="game-card">
+          <span class="discount-badge">-50%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/2050650/header.jpg" alt="Resident Evil 4 Remake" onerror="this.src='https://placehold.co/500x300/151922/00ff66?text=Resident+Evil+4'">
+          <div class="card-body">
+            <h3 class="game-title">Resident Evil 4 Remake</h3>
+            <div class="price-row">
+              <span class="original-price">900.000đ</span>
+              <span class="sale-price discounted">450.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Red Dead Redemption 2 -->
+        <article class="game-card">
+          <span class="discount-badge">-67%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg" alt="Red Dead Redemption 2" onerror="this.src='https://placehold.co/500x300/151922/00ff66?text=Red+Dead+Redemption+2'">
+          <div class="card-body">
+            <h3 class="game-title">Red Dead Redemption 2</h3>
+            <div class="price-row">
+              <span class="original-price">1.000.000đ</span>
+              <span class="sale-price discounted">330.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. The Witcher 3 -->
+        <article class="game-card">
+          <span class="discount-badge">-75%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg" alt="The Witcher 3" onerror="this.src='https://placehold.co/500x300/151922/00ff66?text=The+Witcher+3'">
+          <div class="card-body">
+            <h3 class="game-title">The Witcher 3: Wild Hunt</h3>
+            <div class="price-row">
+              <span class="original-price">600.000đ</span>
+              <span class="sale-price discounted">150.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Monster Hunter World -->
+        <article class="game-card">
+          <span class="discount-badge">-67%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/582010/header.jpg" alt="Monster Hunter World" onerror="this.src='https://placehold.co/500x300/151922/00ff66?text=Monster+Hunter'">
+          <div class="card-body">
+            <h3 class="game-title">Monster Hunter: World</h3>
+            <div class="price-row">
+              <span class="original-price">700.000đ</span>
+              <span class="sale-price discounted">231.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. God of War -->
+        <article class="game-card">
+          <span class="discount-badge">-50%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg" alt="God of War" onerror="this.src='https://placehold.co/500x300/151922/00ff66?text=God+of+War'">
+          <div class="card-body">
+            <h3 class="game-title">God of War</h3>
+            <div class="price-row">
+              <span class="original-price">1.139.000đ</span>
+              <span class="sale-price discounted">569.500 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Hogwarts Legacy -->
+        <article class="game-card">
+          <span class="discount-badge">-60%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/990080/header.jpg" alt="Hogwarts Legacy" onerror="this.src='https://placehold.co/500x300/151922/00ff66?text=Hogwarts+Legacy'">
+          <div class="card-body">
+            <h3 class="game-title">Hogwarts Legacy</h3>
+            <div class="price-row">
+              <span class="original-price">1.280.000đ</span>
+              <span class="sale-price discounted">512.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Devil May Cry 5 -->
+        <article class="game-card">
+          <span class="discount-badge">-67%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/601150/header.jpg" alt="Devil May Cry 5" onerror="this.src='https://placehold.co/500x300/151922/00ff66?text=Devil+May+Cry+5'">
+          <div class="card-body">
+            <h3 class="game-title">Devil May Cry 5</h3>
+            <div class="price-row">
+              <span class="original-price">600.000đ</span>
+              <span class="sale-price discounted">198.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Assassin's Creed Valhalla -->
+        <article class="game-card">
+          <span class="discount-badge">-75%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/2208920/header.jpg" alt="Assassin's Creed Valhalla" onerror="this.src='https://placehold.co/500x300/151922/00ff66?text=AC+Valhalla'">
+          <div class="card-body">
+            <h3 class="game-title">Assassin's Creed Valhalla</h3>
+            <div class="price-row">
+              <span class="original-price">990.000đ</span>
+              <span class="sale-price discounted">247.500 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Extra Hidden Games -->
+        <div class="extra-games">
+          <article class="game-card">
+            <span class="discount-badge">-80%</span>
+            <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1238810/header.jpg" alt="Battlefield V" onerror="this.src='https://placehold.co/500x300/151922/00ff66?text=Battlefield+V'">
+            <div class="card-body">
+              <h3 class="game-title">Battlefield V</h3>
+              <div class="price-row">
+                <span class="original-price">990.000đ</span>
+                <span class="sale-price discounted">198.000 VNĐ</span>
+              </div>
+              <div class="card-actions">
+                <a href="#" class="btn btn-detail">Chi tiết</a>
+                <a href="#" class="btn btn-buy">Mua ngay</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="load-more-wrap">
+        <label for="toggle-sale" class="btn-load-more">Xem thêm Game Khuyến Mãi</label>
+      </div>
+    </section>
+
+    <section class="section" id="adult">
+      <div class="section-title-wrap">
+        <h2 class="section-title adult">Khám Phá Game (Bộ Lọc  )</h2>
+      </div>
+
+      <div class="filter-bar">
+        <button type="button" class="filter-btn active" data-filter="all">Tất cả Tag</button>
+        <button type="button" class="filter-btn" data-filter="action">Hành Động</button>
+        <button type="button" class="filter-btn" data-filter="horror">Kinh Dị</button>
+        <button type="button" class="filter-btn" data-filter="rpg">Nhập Vai</button>
+        <button type="button" class="filter-btn" data-filter="sports">Thể thao</button>
+      </div>
+
+      <input type="checkbox" id="toggle-adult" class="more-trigger">
+
+      <div class="game-grid">
+        <!-- Random game added to fill the empty slot -->
+        <article class="game-card">
+          <span class="discount-badge">-50%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/883710/header.jpg" alt="Resident Evil 2" onerror="this.src='https://placehold.co/500x300/151922/ff0055?text=Resident+Evil+2'">
+          <div class="card-body">
+            <h3 class="game-title">Resident Evil 2</h3>
+            <div class="price-row">
+              <span class="original-price">600.000đ</span>
+              <span class="sale-price discounted">300.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 1. Baldur's Gate 3 -->
+        <article class="game-card">
+          <span class="discount-badge">-20%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg" alt="Baldur's Gate 3" onerror="this.src='https://placehold.co/500x300/151922/ff0055?text=Baldur%27s+Gate+3'">
+          <div class="card-body">
+            <h3 class="game-title">Baldur's Gate 3</h3>
+            <div class="price-row">
+              <span class="original-price">990.000đ</span>
+              <span class="sale-price discounted">792.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Cyberpunk 2077: Phantom Liberty -->
+        <article class="game-card">
+          <span class="discount-badge">-15%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/2138330/header.jpg" alt="Cyberpunk 2077: Phantom Liberty" onerror="this.src='https://placehold.co/500x300/151922/ff0055?text=Phantom+Liberty'">
+          <div class="card-body">
+            <h3 class="game-title">Cyberpunk: Phantom Liberty</h3>
+            <div class="price-row">
+              <span class="original-price">500.000đ</span>
+              <span class="sale-price discounted">425.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. The Witcher 3 -->
+        <article class="game-card">
+          <span class="discount-badge">-75%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg" alt="The Witcher 3" onerror="this.src='https://placehold.co/500x300/151922/ff0055?text=The+Witcher+3'">
+          <div class="card-body">
+            <h3 class="game-title">The Witcher 3: Wild Hunt</h3>
+            <div class="price-row">
+              <span class="original-price">600.000đ</span>
+              <span class="sale-price discounted">150.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. GTA V -->
+        <article class="game-card">
+          <span class="discount-badge">-50%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="Grand Theft Auto V" onerror="this.src='https://placehold.co/500x300/151922/ff0055?text=GTA+V'">
+          <div class="card-body">
+            <h3 class="game-title">Grand Theft Auto V</h3>
+            <div class="price-row">
+              <span class="original-price">450.000đ</span>
+              <span class="sale-price discounted">225.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Dead Space Remake -->
+        <article class="game-card">
+          <span class="discount-badge">-60%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1693980/header.jpg" alt="Dead Space Remake" onerror="this.src='https://placehold.co/500x300/151922/ff0055?text=Dead+Space'">
+          <div class="card-body">
+            <h3 class="game-title">Dead Space Remake</h3>
+            <div class="price-row">
+              <span class="original-price">1.000.000đ</span>
+              <span class="sale-price discounted">400.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Doom Eternal -->
+        <article class="game-card">
+          <span class="discount-badge">-75%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/782330/header.jpg" alt="Doom Eternal" onerror="this.src='https://placehold.co/500x300/151922/ff0055?text=Doom+Eternal'">
+          <div class="card-body">
+            <h3 class="game-title">Doom Eternal</h3>
+            <div class="price-row">
+              <span class="original-price">800.000đ</span>
+              <span class="sale-price discounted">200.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Mortal Kombat 1 -->
+        <article class="game-card">
+          <span class="discount-badge">-50%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1971870/header.jpg" alt="Mortal Kombat 1" onerror="this.src='https://placehold.co/500x300/151922/ff0055?text=Mortal+Kombat+1'">
+          <div class="card-body">
+            <h3 class="game-title">Mortal Kombat 1</h3>
+            <div class="price-row">
+              <span class="original-price">1.300.000đ</span>
+              <span class="sale-price discounted">650.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Resident Evil Village -->
+        <article class="game-card">
+          <span class="discount-badge">-60%</span>
+          <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1196590/header.jpg" alt="Resident Evil Village" onerror="this.src='https://placehold.co/500x300/151922/ff0055?text=RE+Village'">
+          <div class="card-body">
+            <h3 class="game-title">Resident Evil Village</h3>
+            <div class="price-row">
+              <span class="original-price">800.000đ</span>
+              <span class="sale-price discounted">320.000 VNĐ</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-detail">Chi tiết</a>
+              <a href="#" class="btn btn-buy">Mua ngay</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Extra Hidden Games -->
+        <div class="extra-games">
+          <article class="game-card">
+            <span class="discount-badge">-40%</span>
+            <img class="card-thumb" src="https://cdn.cloudflare.steamstatic.com/steam/apps/414700/header.jpg" alt="Outlast 2" onerror="this.src='https://placehold.co/500x300/151922/ff0055?text=Outlast+2'">
+            <div class="card-body">
+              <h3 class="game-title">Outlast 2</h3>
+              <div class="price-row">
+                <span class="original-price">350.000đ</span>
+                <span class="sale-price discounted">210.000 VNĐ</span>
+              </div>
+              <div class="card-actions">
+                <a href="#" class="btn btn-detail">Chi tiết</a>
+                <a href="#" class="btn btn-buy">Mua ngay</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="load-more-wrap">
+        <label for="toggle-adult" class="btn-load-more">Xem thêm Game Khám Phá</label>
+      </div>
+    <script src="script.js" defer></script>
+    </section>
+
+  </main>
+
+</body>
+</html>
